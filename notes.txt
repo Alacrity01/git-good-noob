@@ -10,3 +10,6 @@ Using 'touch deleteme.txt' and 'mv deleteme.txt deleteme', I have created a file
 This website may be helpful for creating branches: <https://www.atlassian.com/git/tutorials/using-branches>
 Using 'git branch <branch>' I will create a branch for myself to track my changes.
 using 'git checkout jeff' I switched to the new branch I created. Now I will add the changes to be committed using 'git add notes.txt'. I could also use 'git add .' to add all changes, but I do not want to save the directory 'deleteme'. I will delete that with 'rm -rf deleteme'.
+Using git commit -m '<commit note>' I can save the changes I want to be pushed to github. After committing, I will have to push to actually save it online.
+Normally when I am using my own repo, I push to main--without creating a new branch, I use the command 'git push'. However, using that now, I was prompted that there is no upstream branch and I need to use the command 'git push --set-upstream origin jeff' to push and set the remote as upstream
+'cp notes.txt notes_jb.txt' made a copy of notes.txt and named it notes_jb.txt
