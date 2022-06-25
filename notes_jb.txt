@@ -1,0 +1,14 @@
+we can use this text file for informal notes on what we did, changes, questions, resolutions, etc.
+JB: To add a line to the file, I used the following command: echo "we can use this text file for informal notes on what we did, changes, questions, resolutions, etc." >> notes.txt
+
+JB: To read from the file in the terminal, I used: cat notes.txt
+to check for local changes, I used: git status
+'git status' showed me that there were changes to 'notes.txt', listed as an Untracked file
+using 'mkdir deleteme', I created a new directory. Now 'git status' will show two untracked files: notes.txt and deleteme
+Actually, I was surprised to see that it still only shows one untracked file (notes.txt). I learned that github does not track empty directories.
+Using 'touch deleteme.txt' and 'mv deleteme.txt deleteme', I have created a file and added it to the deleteme directory. Now I expect it to show as an untracked file using 'git status'.
+This website may be helpful for creating branches: <https://www.atlassian.com/git/tutorials/using-branches>
+Using 'git branch <branch>' I will create a branch for myself to track my changes.
+using 'git checkout jeff' I switched to the new branch I created. Now I will add the changes to be committed using 'git add notes.txt'. I could also use 'git add .' to add all changes, but I do not want to save the directory 'deleteme'. I will delete that with 'rm -rf deleteme'.
+Using git commit -m '<commit note>' I can save the changes I want to be pushed to github. After committing, I will have to push to actually save it online.
+Normally when I am using my own repo, I push to main--without creating a new branch, I use the command 'git push'. However, using that now, I was prompted that there is no upstream branch and I need to use the command 'git push --set-upstream origin jeff' to push and set the remote as upstream
