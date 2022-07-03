@@ -44,9 +44,12 @@ new line 16
 
 new line 17
 
+<<<<<<< HEAD
 
 new line 19
 
 
 new line 20
 
+=======
+>>>>>>> parent of a8f2c71 (new line 19)
